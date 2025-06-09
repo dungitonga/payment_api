@@ -59,6 +59,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'payment.urls'
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # or your path to the base dir
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
